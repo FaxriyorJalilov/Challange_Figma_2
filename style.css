@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #f3eae3;
+  max-width: 1440px;
+}
+.container {
+  /* max-width: 1440px; */
+  /* height: 100vh; */
+  /* margin: 0 auto; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header_box {
+  display: flex;
+}
+.Header_box img + img {
+  display: none;
+}
+.Header_box_right {
+  border-radius: 0px 10px 10px 0px;
+  background: #fff;
+  padding: 32px;
+}
+.Header_box_right h3 {
+  color: #818182;
+  /* text-align: center; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 135.023%;
+  letter-spacing: 5.16px;
+}
+.Header_box_right h2 {
+  width: 240px;
+  color: #000;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-top: 13px;
+}
+.Header_box_right p {
+  color: #8d8e93;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 161%;
+  max-width: 227px;
+  margin-top: 24px;
+}
+.Header_box_right h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.Header_box_right span {
+  color: #3d8168;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  align-items: center;
+}
+.Header_box_right del {
+  color: #8d8e93;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 161%;
+  letter-spacing: -0.42px;
+  text-decoration-line: strikethrough;
+}
+.Header_box_right a {
+  margin-top: 40px;
+  border-radius: 7px;
+  background: #3d8168;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 161%;
+  padding: 15px 0px 15px 0px;
+}
+@media (max-width: 420px) {
+  .container {
+    width: unset;
+    height: unset;
+
+    padding: 28px 24px;
+  }
+  .Header_box > img {
+    display: none;
+  }
+  .Header_box img + img {
+    display: block;
+    width: 100%;
+  }
+  .Header_box {
+    flex-wrap: wrap;
+  }
+  .Header_box_right h2 {
+    width: 290px;
+  }
+  .Header_box_right {
+    border-radius: unset;
+    background: #fff;
+    padding: 32px;
+    width: 100%;
+  }
+  .Header_box_right p {
+    max-width: 300px;
+    margin-top: 16px;
+  }
+}
